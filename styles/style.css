@@ -110,6 +110,7 @@ html {
 .cover-title {
   padding-top: 165px;
   padding-left: 50px;
+  padding-right: 50px;
   position: relative;
   z-index: 10;
   margin: 0;
@@ -146,13 +147,22 @@ html {
   text-align: right;
 }
 
+.aligned-text_right::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-right: -30px;
+}
+
 .cover__description {
   display: flex;
+  gap: 107px;
   align-items: center;
   position: relative;
-  gap: 107px;
   margin-top: 126px;
   padding-left: 50px;
+  padding-right: 50px;
   z-index: 10;
 }
 
@@ -163,7 +173,15 @@ html {
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
-  word-spacing: 18px;
+  word-spacing: 15px;
+}
+
+.cover__description-text::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: bottom;
 }
 
 .bet-button {
