@@ -372,7 +372,7 @@ ul {
 
 .footer {
   max-width: 1100px;
-  padding: 180px 24px 0 24px;
+  padding-top: 180px;
   margin: 0 50px 82px 50px;
   display: grid;
   grid-template-columns: auto 1fr auto;
